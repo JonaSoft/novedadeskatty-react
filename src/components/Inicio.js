@@ -22,7 +22,7 @@ const Inicio = () => {
                     </div>
                     <div className="col-md-4">
                         <Login />
-                        <Chats />
+                        
                     </div>
                 </div>
             </div>

@@ -3,6 +3,8 @@ import withFirebaseAuth from 'react-with-firebase-auth'
 import  firebase from 'firebase/app';
 import 'firebase/auth';
 import firebaseConfig from '../firebaseConfig';
+import Chats from './Chats'
+
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
@@ -13,20 +15,30 @@ class Login extends Component {
             signOut,
             signInWithGoogle,
           } = this.props;
+          //const [email] = user
 
+          if (user){
+            const email = user.email;
+            console.log(email);
+            localStorage.setItem('email', JSON.stringify(email))
+          }
+         
+           
+          
       return (
         <div>
             {
               user
-                ? <p>Hello, {user.displayName}</p>
-                : <p>Please sign in.</p>
+                ? <Chats  />
+                : <button onClick={signInWithGoogle}>Sign in with Google</button>
             }
-  
             {
               user
                 ? <button onClick={signOut}>Sign out</button>
-                : <button onClick={signInWithGoogle}>Sign in with Google</button>
+                : null
             }
+  
+           
         </div>
       );        
     }

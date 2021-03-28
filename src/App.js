@@ -5,7 +5,7 @@ import Catalogo from './components/Catalogo';
 import Producto from './components/Producto';
 import Carrito from './components/Carrito';
 import Navbarra from './components/Navbar';
-//importar firebase
+
 
 
 
