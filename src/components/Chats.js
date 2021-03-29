@@ -9,6 +9,7 @@ import  'firebase/firestore';
 //import firebaseConfig from '../firebaseConfig';
 
 
+
 //const fb = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
@@ -17,35 +18,67 @@ const Chats = () => {
  //const { withFirebaseAuth} = Login;
  //console.log( withFirebaseAuth.providers)
 
-const [mensaje, setMensaje] = useState({
-    mensaje:'',
-    usuario :'',
-    fecha: new Date() 
-});
+// state guardar valores del mensaje enviado
+ const [mensaje, setMensaje] = useState({});
 
-const [usuario, setUsuario] = useState({
-   usuario: 'admin@gmail.com', 
-   password:'123456',
-   fecha: new Date()
-});
+// state parainvocar  mensajes del chat de chat-react
+const [chat, setChat] = useState([]);
 
+//limpia cadena de usuario y avatar
+const valorusuario = localStorage.getItem('email').substring(1,localStorage.getItem('email').length-1);
+const valoravatar = localStorage.getItem('avatar').substring(1,localStorage.getItem('avatar').length-1);
 
+//guardar valores del usuario 
 const actualizarState = (e) =>{
     
     setMensaje({
         [e.target.name]: e.target.value,
-        usuario :localStorage.getItem('email'),
+        usuario :valorusuario,
+        avatar :valoravatar,
         fecha: new Date() 
 
     })
+};
 
-}
+
+// funcion para invocar coleccion chat-react
+ const llamarColeccion = ()=>{
+    //setChat([])
+    db.collection("chat-react1").orderBy('fecha','desc').onSnapshot((querySnapshot) => {     
+        const docs = [];
+        querySnapshot.forEach((doc) => {
+            docs.push({...doc.data(), id:doc.id})
+        });
+        setChat(docs)
+        console.log(docs)
+       
+        console.log(chat)
+    });
+    console.log(chat)
+ }
+
+
+// funcion para guardar mensaje
 const enviarMensaje = async (e)=>{
     e.preventDefault();
+    
+    //setChat([]);
     console.log('envia mensaje');
-    db.collection('chat-react').doc().set( mensaje )
-    console.log('nueva tarea')
-}
+    db.collection('chat-react1').doc().set( mensaje )
+    .then(res =>{
+        //console.log(res)
+    })
+    //console.log('nueva tarea')
+    
+    
+    //    const padre= imagen.parentNode;
+    //padre.removeChild(imagen);
+    
+    llamarColeccion();
+    //console.log({chat})
+    //setChat([])
+};
+
 
 
     return ( 
@@ -57,19 +90,44 @@ const enviarMensaje = async (e)=>{
                    
                     <hr></hr>
                     <div id="app-mensajes"className="app-mensajes">
-                
-                        <div className="text-right">
-                            <span className="badge badge-primary">Novedades Katty</span>
-                            <p>
-                                Bienvenido a mi chat
-                            </p>
-                        </div>
-                        <div className="text-left">
-                            <span className="badge badge-success">Cliente</span>
-                            <p>
-                                Saludos Novedades 
-                            </p>
-                        </div>
+                        
+                        
+                        {chat.map((mensuser) => {
+                           return <div className="container-fluid p-0">
+                               {mensuser.usuario==="jonasoftservice@gmail.com"
+                                    ?
+                                    <div className="text-right">
+                                        <span className="badge badge-primary">Novedades Katty</span>
+                                            <p>
+                                                {mensuser.mensaje}
+                                            </p>
+                                    </div>       
+                                    : 
+                                        <div className="text-left mt-2">
+                                            <span className="badge badge-light fecha">
+                                            {mensuser.usuario}
+                                            </span>    
+                                        <div>
+                                        <span > 
+                                            <img 
+                                                src={mensuser.avatar}
+                                                className="rounded-circle" 
+                                                width="35" 
+                                                height="35"
+                                            /> 
+                                        </span> 
+                                        <span  className="ml-2">{mensuser.mensaje} </span>  
+                                        </div>
+                                    </div>
+                                }
+                                    
+                                    
+                                 </div>
+                                    
+                        }
+                            
+                        )}
+                       
                     </div>
                     <form
                         onSubmit={enviarMensaje}
@@ -81,6 +139,7 @@ const enviarMensaje = async (e)=>{
                                         className="form-control mt-2"
                                         name="mensaje"
                                         placeholder="Escribe tu mensaje"
+                                        
                                         onChange={actualizarState}
                                 />
                             </div>

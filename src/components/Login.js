@@ -19,8 +19,12 @@ class Login extends Component {
 
           if (user){
             const email = user.email;
-            console.log(email);
-            localStorage.setItem('email', JSON.stringify(email))
+            const uid = user.uid 
+            const avatar = user.photoURL;
+            //console.log(email);
+            localStorage.setItem('email', JSON.stringify(email));
+            localStorage.setItem('uid', JSON.stringify(uid));
+            localStorage.setItem('avatar', JSON.stringify(avatar));
           }
          
            
