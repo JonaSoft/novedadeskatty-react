@@ -84,72 +84,75 @@ const enviarMensaje = async (e)=>{
     return ( 
         <Fragment>
             
-            <div className="container main-container">
-                <div className="chat-window">
-                    <h5>!!! HOLA !!!, en que te puedo ayudar? </h5>
+            <div className="container-fluid  main-container">
+                <div className="chat-window ">
+                    <h5 className="text-white m-2">!!! HOLA !!!, en que te puedo ayudar? </h5>
                    
-                    <hr></hr>
-                    <div id="app-mensajes"className="app-mensajes">
+                    
+                    <div className="app-mensajes">
                         
                         
                         {chat.map((mensuser) => {
-                           return <div className="container-fluid p-0">
-                               {mensuser.usuario==="jonasoftservice@gmail.com"
-                                    ?
-                                    <div className="text-right">
-                                        <span className="badge badge-primary">Novedades Katty</span>
-                                            <p>
-                                                {mensuser.mensaje}
-                                            </p>
-                                    </div>       
-                                    : 
-                                        <div className="text-left mt-2">
-                                            <span className="badge badge-light fecha">
-                                            {mensuser.usuario}
-                                            </span>    
-                                        <div>
-                                        <span > 
-                                            <img 
-                                                src={mensuser.avatar}
-                                                className="rounded-circle" 
-                                                width="35" 
-                                                height="35"
-                                            /> 
-                                        </span> 
-                                        <span  className="ml-2">{mensuser.mensaje} </span>  
-                                        </div>
+                           return   <div className="container-fluid p-0">
+                                        {mensuser.usuario==="jonasoftservice@gmail.com"
+                                        ?
+                                        <div className="text-right">
+                                            <span className="badge badge-primary mr-2">Novedades Katty</span>
+                                                <p  className="mr-2">
+                                                    {mensuser.mensaje}
+                                                </p>
+                                        </div>       
+                                        : 
+                                            <div className="text-left mt-2">
+                                                <span className="badge badge-success fecha">
+                                                {mensuser.usuario}
+                                                </span>    
+                                                <div>
+                                                <span > 
+                                                    <img 
+                                                        src={mensuser.avatar}
+                                                        className="rounded-circle" 
+                                                        width="35" 
+                                                        height="35"
+                                                    /> 
+                                                </span> 
+                                                <span  className="ml-2">{mensuser.mensaje} </span>  
+                                                </div>
+                                            </div>
+                                        }
                                     </div>
-                                }
-                                    
-                                    
-                                 </div>
                                     
                         }
                             
                         )}
                        
                     </div>
+                    <hr></hr>
                     <form
                         onSubmit={enviarMensaje}
                     >
-                         <div className="row">
-                            <div className="form-group col-md-9 p-0 pl-3">
+                         <div className="row p-0 mt-0">
+                            <div className="col-md-12 ">
                                 <input
                                         type="text"
-                                        className="form-control mt-2"
+                                        className="form-control p-2 "
                                         name="mensaje"
+                                        
                                         placeholder="Escribe tu mensaje"
                                         
                                         onChange={actualizarState}
                                 />
                             </div>
-                            <div className="form-group col-md-3 p-0 pr-3">
+                        </div>
+                        <div className="row">
+                            <div className="col-md-12 ">
                                 <button 
                                     type="submit"
-                                    className="btn btn-success btn-block mt-2"
+                                    className="btn btn-primary-outlined btn-block p-2"
                                         
                                 >
-                                    <i class="fas fa-paper-plane"></i>
+                                    <i class="fas fa-paper-plane text-white mt-2"> </i>
+                                    <h5 className=" text-white ">  Enviar</h5>
                                  </button>
                             </div>
                         </div>

@@ -9,7 +9,7 @@ const Formulario = () => {
             >
                 <div className="container-fluid ">
                     <div className="row justify-content-md-center" >
-                    <div className="form-group col-md-6">
+                    <div className="form-group col-md-7">
                         <input
                             type="text"
                             className="form-control form-control-lg"
@@ -18,11 +18,13 @@ const Formulario = () => {
                         />
                     </div>
                     <div className="form-group col-md-2">
-                        <input
+                        <button
                             type="submit"
-                            className="btn btn-lg btn-danger btn-block"
+                            className="btn btn-lg btn-success btn-block"
                 
-                        />
+                        >
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
                     </div>
                     </div>
                 </div>

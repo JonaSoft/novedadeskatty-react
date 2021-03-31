@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Fragment,Component} from 'react';
 import withFirebaseAuth from 'react-with-firebase-auth'
 import  firebase from 'firebase/app';
 import 'firebase/auth';
@@ -30,18 +30,35 @@ class Login extends Component {
            
           
       return (
-        <div>
+        <div className="container-fluid d-flex justify-content-end">
             {
               user
-                ? <Chats  />
-                : <button onClick={signInWithGoogle}>Sign in with Google</button>
+                ?
+                <Fragment>
+                  <div className="row">
+                    <Chats />
+                    <div className="col-md-12 text-right">
+                      <button className="btn btn-danger" onClick={signOut}>
+                          <i class="fas fa-sign-out-alt "></i>
+                          Salir
+                      </button>
+                    </div>
+                      
+                  
+                  </div>
+                 
+                </Fragment>
+
+                
+                
+                :
+                <div className="row">
+                  <button className=" btn btn-primary " onClick={signInWithGoogle}>
+                    <i class="far fa-comment-dots fa-2x"></i>
+                    <span> Necesitas ayuda?</span>
+                </button>
+                </div>
             }
-            {
-              user
-                ? <button onClick={signOut}>Sign out</button>
-                : null
-            }
-  
            
         </div>
       );        

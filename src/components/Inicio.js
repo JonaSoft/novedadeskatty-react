@@ -10,17 +10,21 @@ import Login from './Login';
 const Inicio = () => {
     return ( 
         <Fragment>
-            <Carrousel />
             <Formulario />
+            <Carrousel />
+            
 
             
             
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-8">
+                    <div className="col-md-12">
                         <h2>Inicio 1</h2>
                     </div>
-                    <div className="col-md-4">
+                    
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
                         <Login />
                         
                     </div>

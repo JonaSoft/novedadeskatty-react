@@ -6,7 +6,7 @@ const Navbarra = (props) => {
     <div className="container-fluid ">
       
       <Nav >
-        <div className="container-fluid display-5 navlink d-flex  justify-content-end">
+        <div className="container-fluid display-5 navlink d-flex  justify-content-end text-white">
             
             <NavLink className="navlink" href="/"><i className="fas fa-home"> </i><span> Inicio</span></NavLink>
             

@@ -1,6 +1,6 @@
 .main-container{
-    margin-top: 40px;
-    margin-bottom: 150px;
+    margin-top: 5px;
+    margin-bottom:2px;
   }
   
   .puntero{
@@ -10,19 +10,35 @@
   
   .chat-window{
     padding: 10px;
-    width: 300px;
-    height: 400px;
+    width: 320px;
+    height: 570px;
     overflow: hidden;
-    border: 1px solid #4080FF;
+    border: 1px solid #3a3b3b;
     border-radius: 20px;
+    background-color: rgb(10, 15, 28);
+    background: #0B173B;
+    color: black;
+    opacity:0.95
+  }
+  /*Scroll personalizado*/
+  .app-mensajes::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(104, 103, 103);
+   
+    border-radius:5px;
   }
   
+  
   .app-mensajes{
-    overflow-y:scroll;
-    height:270px;
-    /*background:gray;*/
+    overflow-y:auto ;
+    height:370px;
+    background: rgb(199, 183, 183); 
+    border-radius:5px;
     padding: 0px;
-  }
+    opacity:0.90;
+  };
+ 
+  
   
   
   /* Animaciones */
