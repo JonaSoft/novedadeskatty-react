@@ -20,6 +20,7 @@ const Inicio = () => {
                 <div className="row">
                     <div className="col-md-12">
                         <h2>Inicio 1</h2>
+                        <img src="../imagenes/baño.jpg" width="200" height="200" />
                     </div>
                     
                 </div>
