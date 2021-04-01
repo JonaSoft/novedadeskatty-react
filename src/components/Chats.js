@@ -85,7 +85,7 @@ const enviarMensaje = async (e)=>{
         <Fragment>
             
             <div className="container-fluid  main-container">
-                <div className="chat-window ">
+                <div className="chat-window "style={{position:'fixed',top:'0', right:'0'}}>
                     <h5 className="text-white m-2">!!! HOLA !!!, en que te puedo ayudar? </h5>
                    
                     
@@ -127,15 +127,15 @@ const enviarMensaje = async (e)=>{
                         )}
                        
                     </div>
-                    <hr></hr>
+                    
                     <form
                         onSubmit={enviarMensaje}
                     >
-                         <div className="row p-0 mt-0">
+                         <div className="row p-0 mt-2">
                             <div className="col-md-12 ">
                                 <input
                                         type="text"
-                                        className="form-control p-2 "
+                                        className="form-control "
                                         name="mensaje"
                                         
                                         placeholder="Escribe tu mensaje"
@@ -148,11 +148,11 @@ const enviarMensaje = async (e)=>{
                             <div className="col-md-12 ">
                                 <button 
                                     type="submit"
-                                    className="btn btn-primary-outlined btn-block p-2"
+                                    className="btn btn-primary btn-block p-0"
                                         
                                 >
-                                    <i class="fas fa-paper-plane text-white mt-2"> </i>
-                                    <h5 className=" text-white ">  Enviar</h5>
+                                    <i class="fas fa-paper-plane text-white"> </i>
+                                    <h5 className=" text-white "> </h5>
                                  </button>
                             </div>
                         </div>

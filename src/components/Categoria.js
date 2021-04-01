@@ -9,10 +9,10 @@ const Categoria = ({categoria}) => {
            
                 
                     <div className="card">
-                        <img className="card-img-top"src={imagen}  height="300"alt="Hola"/>
+                        <img className="card-img-top"src={imagen}  height="200"alt="Hola"/>
                         <div className="card-body">
 
-                            <h5  className="cardtitle tarjetas">{descripcion}</h5>
+                            <h5  className="card-title tarjetas text-secondary">{descripcion}</h5>
                         </div>
                     </div>
 

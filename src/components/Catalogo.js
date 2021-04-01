@@ -22,7 +22,8 @@ const Catalogo = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-            <h1 className="text-center">Mira nuestras novedades</h1>
+            <h2 className="text-center" style={{ fontFamily:'Carter One'}}>Productos para ti y tu familia</h2>
+            <br></br>
             </div>
             
           </div>

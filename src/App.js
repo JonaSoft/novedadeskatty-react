@@ -5,6 +5,8 @@ import Catalogo from './components/Catalogo';
 import Producto from './components/Producto';
 import Carrito from './components/Carrito';
 import Navbarra from './components/Navbar';
+import Login from './components/Login';
+import Footer from './components/Footer'
 
 
 
@@ -20,6 +22,9 @@ function App() {
         <Route exact path="/producto" component = {Producto} />
         <Route exact path="/carrito" component = {Carrito} />
       </Switch>
+      <Login  />
+      <br></br>
+      <Footer />
     </Router>
   );
 }

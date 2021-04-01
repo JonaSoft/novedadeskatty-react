@@ -40,7 +40,7 @@ class Login extends Component {
                     <div className="col-md-12 text-right">
                       <button className="btn btn-danger" onClick={signOut}>
                           <i class="fas fa-sign-out-alt "></i>
-                          Salir
+                          Cerrar Chat
                       </button>
                     </div>
                       
@@ -52,7 +52,7 @@ class Login extends Component {
                 
                 
                 :
-                <div className="row">
+                <div className="row" >
                   <button className=" btn btn-primary " onClick={signInWithGoogle}>
                     <i class="far fa-comment-dots fa-2x"></i>
                     <span> Necesitas ayuda?</span>
