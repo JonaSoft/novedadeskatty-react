@@ -9,6 +9,9 @@
   
   
   .chat-window{
+    position:fixed;
+    top: 0;
+    right: 0;
     padding: 10px;
     width: 350px;
     height: 405px;
@@ -55,15 +58,16 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+  #chat-window{
+    
+    
+    animation: animando 2s;
+  }
+
+  @keyframes animando {
+    0% { top: 400px; right:0px; }
+   
+    100% { top: 0px; right: 0px; }
   }
   
   .fadeIn {

@@ -14,10 +14,19 @@ html {
     color: rgb(33, 35, 39);
     font-size: 15px;
   }
-  .navlink > span{
+  .nav{
+    float:left;
+  }
+
+  .navlink >i> span{
     
     font-family:'Bungee', cursive;
   }
+
+  .navlink>i:hover{
+    color:rgb(157, 228, 203);
+  }
+  
 .cabecera {
     width:100%;
     height:75px;

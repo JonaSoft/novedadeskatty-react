@@ -84,8 +84,8 @@ const enviarMensaje = async (e)=>{
     return ( 
         <Fragment>
             
-            <div className="container-fluid  main-container">
-                <div className="chat-window "style={{position:'fixed',top:'0', right:'0'}}>
+            <div className="container-fluid  main-container animated fast fadeIn">
+                <div id="chat-window"className="chat-window ">
                     <h5 className="text-white m-2">!!! HOLA !!!, en que te puedo ayudar? </h5>
                    
                     
