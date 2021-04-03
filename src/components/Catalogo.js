@@ -4,12 +4,12 @@ import Categoria from './Categoria'
 const Catalogo = () => {
   const [categorias, guardarCategoria] = useState([
        
-        {id: 1, nombre: 'baño', imagen: '/imagenes/baño.jpg', descripcion:'Para nuestros servicios'},
+        {id: 1, nombre: 'baño', imagen: '/imagenes/baño.jpg', descripcion:'Acondiciona tus servicios'},
         {id: 2, nombre: 'cocina', imagen: '/imagenes/cocina.jpg', descripcion:'Nuestra moderna cocina'},
         {id: 3, nombre: 'colegio', imagen: '/imagenes/colegio.jpg', descripcion:'Jovenes y escolares'},
         {id: 4, nombre: 'comedor', imagen: '/imagenes/comedor.jpg', descripcion:'Reunión y ocasiones'},
-        {id: 5, nombre: 'dormitorio', imagen: '/imagenes/dormitorio.jpg', descripcion:'Es nuestro espacio'},
-        {id: 6, nombre: 'estudio', imagen: '/imagenes/estudio.jpg', descripcion:'El espacio ejecutivo' },
+        {id: 5, nombre: 'dormitorio', imagen: '/imagenes/dormitorio.jpg', descripcion:'En nuestro espacio'},
+        {id: 6, nombre: 'estudio', imagen: '/imagenes/estudio.jpg', descripcion:'El rincon del ejecutivo' },
         {id: 7, nombre: 'herramientas', imagen: '/imagenes/herramientas.jpg', descripcion:'Mis herramientas'},
         {id: 8, nombre: 'mascotas', imagen: '/imagenes/mascotas.jpg', descripcion:'Mascotas con cariño'},
         {id: 9, nombre: 'mujeres', imagen: '/imagenes/mujeres.jpg', descripcion:'Solo para nosotras'},
@@ -19,11 +19,11 @@ const Catalogo = () => {
 ])
     return (
       <Fragment>
-        <div className="container">
+        <div className="container" style={{minheight:'1200px', height:'auto'}}>
           <div className="row">
             <div className="col-md-12">
-            <h2 className="text-center" style={{ fontFamily:'Carter One'}}>Productos para ti y tu familia</h2>
-            <br></br>
+                <h2 className="text-center" style={{ fontFamily:'Carter One'}}>Productos para ti y tu familia</h2>
+                <br></br>
             </div>
             
           </div>

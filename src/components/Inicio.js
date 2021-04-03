@@ -12,11 +12,8 @@ const Inicio = () => {
         <Fragment>
             <Formulario />
             <Carrousel />
-            
-
-            
-            
-            <div className="container-fluid">
+            <br></br>
+            <div className="container-fluid" style={{minheight:'1200px', height:'auto'}}>
                 <div className="row">
                     <div className="col-md-8">
                         <h2>Nosotros</h2>

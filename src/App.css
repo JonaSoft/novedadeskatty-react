@@ -41,3 +41,9 @@ html {
 .navlink{
   color:white;
 }
+#cierrachat{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+}

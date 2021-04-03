@@ -4,7 +4,7 @@ import  firebase from 'firebase/app';
 import 'firebase/auth';
 import firebaseConfig from '../firebaseConfig';
 import Chats from './Chats'
-
+import '../App.css'
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
@@ -30,22 +30,25 @@ class Login extends Component {
            
           
       return (
-        <div className="container-fluid d-flex justify-content-end">
+        <div id ="cierrachat"className="container-fluid d-flex justify-content-end">
             {
               user
                 ?
                 <Fragment>
                   <div className="row">
-                    <Chats />
-                    <div className="col-md-12 text-right">
-                      <button className="btn btn-danger" onClick={signOut}>
-                          <i class="fas fa-sign-out-alt "></i>
-                          Cerrar Chat
-                      </button>
+                    
+                      <div className="col-md-12">
+                      <Chats />
+                      </div>
+                    </div>  
+                    <div className="row">               
+                      <div  className="col-md-12 text-left">
+                        <button  className="btn btn-danger mb-2" onClick={signOut}>
+                            <i class="fas fa-sign-out-alt "></i>
+                            Cerrar Chat
+                        </button>
+                      </div>
                     </div>
-                      
-                  
-                  </div>
                  
                 </Fragment>
 
@@ -53,13 +56,15 @@ class Login extends Component {
                 
                 :
                 <div className="row" >
-                  <button className=" btn btn-primary " onClick={signInWithGoogle}>
-                    <i class="far fa-comment-dots fa-2x"></i>
-                    <span> Necesitas ayuda?</span>
+                  
+                  <button className=" btn btn-primary mb-2" onClick={signInWithGoogle}>
+                    <i class="far fa-comment-dots "></i>
+                    <span className=""> Necesitas ayuda?</span>
                 </button>
+                <br></br>
                 </div>
             }
-           
+           <br></br>
         </div>
       );        
     }
