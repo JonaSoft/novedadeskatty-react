@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Navbarra />
-      <br></br>
+     
       <Switch>
         <Route exact path="/" component = {Inicio} />
         <Route exact path="/catalogo" component = {Catalogo} />

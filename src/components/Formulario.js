@@ -7,13 +7,13 @@ const Formulario = () => {
             <form
             
             >
-                <div className="container-fluid ">
+                <div className="container-fluid  ">
                     <div className="row justify-content-md-center" >
                     <div className="form-group col-md-7">
                         <input
                             type="text"
                             className="form-control form-control-lg"
-                            placeholder="Busca por categoria, ejemplo: ropa, cocina o belleza"
+                            placeholder="Busca por producto o categoria, ejemplo: accesorios, cocina,  belleza"
                 
                         />
                     </div>

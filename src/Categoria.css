@@ -8,6 +8,6 @@
 	border: 2px solid black;
 	-webkit-box-shadow: 2px 2px 2px #82c3a6;
 	-moz-box-shadow: 2px 2px 2px #82c3a6;
-	 transform: rotate(5deg);
+	 transform: rotate(3deg);
 	transition: 2s;
 }

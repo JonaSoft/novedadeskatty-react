@@ -22,7 +22,7 @@ const Catalogo = () => {
         <div className="container" style={{minheight:'1200px', height:'auto'}}>
           <div className="row">
             <div className="col-md-12">
-                <h2 className="text-center" style={{ fontFamily:'Carter One'}}>Productos para ti y tu familia</h2>
+                <h2 className="text-center" style={{ fontFamily:'Carter One',}}>Productos para ti y tu familia</h2>
                 <br></br>
             </div>
             

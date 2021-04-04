@@ -21,20 +21,6 @@ const Footer = () => {
 
                         
                    </div>
-                   <div className=" col-md-4 col-sm-12 text-center mt-2">
-                          <h5>Comunicate con nosotros</h5>
-                          <div className="align-items-center">
-                              
-                              <a href="#" target="_blank" rel="noopener noreferrer">
-                              <img src="/imagenes/callcenter.jpg" alt="" width="250" height="150"/>
-                              </a>
-                              
-                          </div>
-                          <p>Linea directa para ayudarte a realizar tus compras y hacer un seguimiento de tu pedido.</p>
-                          <h4>LLamanos al 999-999999</h4>
-
-                        
-                   </div>
                    <div className="col-md-4 col-sm-12 text-center mt-2">
                           <h5>Ahora también por WhatsApp</h5>
                           <div className="align-items-center">
@@ -46,6 +32,22 @@ const Footer = () => {
                           <h4>Escribenos al 555-555555</h4>
                           <p>De lunes a sabado de 9.00am hasta las 6.00pm</p>
                     </div>
+                    <div className=" col-md-4 col-sm-12 text-center mt-2">
+                          <h5>Comunicate con nosotros</h5>
+                          <div className="container-fluid">
+                              
+                              <a href="#" target="_blank" >
+                              <img src="/imagenes/callcenter.jpg" alt="" width="250" height="150"/>
+                              </a>
+                              
+                          </div>
+                          <p>Linea directa para ayudarte a realizar tus compras, pagos y seguimiento de tus pedidos.</p>
+                          <h4>LLamanos al 999-999999</h4>
+
+                        
+                   </div>
+                   
+                   
 
             </div>
             <br></br>

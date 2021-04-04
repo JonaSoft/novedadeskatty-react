@@ -10,8 +10,8 @@ import {
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
-import img1 from '../imagenes/img2.jpg' ;
-import img2 from '../imagenes/img3.jpg';
+import img1 from '../imagenes/img3.jpg' ;
+import img2 from '../imagenes/img2.jpg';
 import img3 from '../imagenes/img1.jpg';
 
 
@@ -20,12 +20,12 @@ const items = [
   {
     src: img1,
     altText: 'STORE KATTY',
-    caption: 'Todo lo que necesites, aquí.'
+    caption: 'Seriedad - Eficiencia - Calidad.'
   },
   {
     src: img2,
     altText: 'En todos nuestros productos.',
-    caption: 'Seriedad - Eficiencia - Calidad'
+    caption: 'Lo que imaginas y buscas, aquí'
   },
   {
     src: img3,
@@ -62,7 +62,7 @@ const Carrousel = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-         <CarouselCaption  className="text-light display-4  font-italic Italica" captionText={item.caption}  />
+         <CarouselCaption  className="text-light textocarrousel  font-italic Italica" captionText={item.caption}  />
          
         <img className="m-2"src={item.src} alt={item.altText} width="100%" height="370px" />
        
@@ -74,14 +74,14 @@ const Carrousel = (props) => {
 
   return (
     <Fragment>
-        <div className="container justify-content-center ">
+        <div id="carrousel" className="container justify-content-center ">
 
-            <Carousel  
+            <Carousel   
                 activeIndex={activeIndex}
                 next={next}
                 previous={previous}
             >
-                <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+                <CarouselIndicators  items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
                 {slides}
                 <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
                 <CarouselControl direction="next" directionText="Next" onClickHandler={next} />

@@ -14,9 +14,7 @@ import  'firebase/firestore';
 const db = firebase.firestore();
 
 const Chats = () => {
- //console.log(email) 
- //const { withFirebaseAuth} = Login;
- //console.log( withFirebaseAuth.providers)
+ 
 
 // state guardar valores del mensaje enviado
  const [mensaje, setMensaje] = useState({});
@@ -27,6 +25,9 @@ const [chat, setChat] = useState([]);
 //limpia cadena de usuario y avatar
 const valorusuario = localStorage.getItem('email').substring(1,localStorage.getItem('email').length-1);
 const valoravatar = localStorage.getItem('avatar').substring(1,localStorage.getItem('avatar').length-1);
+let fechamsj = new Date();
+fechamsj= fechamsj.getDate() + "/" + (fechamsj.getMonth() +1) + "/" +fechamsj.getFullYear();
+console.log(fechamsj)
 
 //guardar valores del usuario 
 const actualizarState = (e) =>{
@@ -67,6 +68,9 @@ const enviarMensaje = async (e)=>{
     db.collection('chat-react1').doc().set( mensaje )
     .then(res =>{
         //console.log(res)
+        setMensaje({
+            mensaje:''
+        })
     })
     //console.log('nueva tarea')
     
@@ -99,6 +103,14 @@ const enviarMensaje = async (e)=>{
                                         <div className="text-right">
                                             <span className="badge badge-primary mr-2">Novedades Katty</span>
                                                 <p  className="mr-2">
+                                                <span > 
+                                                    <img 
+                                                        src={mensuser.avatar}
+                                                        className="rounded-circle" 
+                                                        width="35" 
+                                                        height="35"
+                                                    /> 
+                                                </span> 
                                                     {mensuser.mensaje}
                                                 </p>
                                         </div>       
@@ -139,7 +151,7 @@ const enviarMensaje = async (e)=>{
                                         name="mensaje"
                                         
                                         placeholder="Escribe tu mensaje"
-                                        
+                                        value={mensaje.mensaje}
                                         onChange={actualizarState}
                                 />
                             </div>

@@ -6,6 +6,8 @@ html {
   body {
     min-height: 100%;
     background-color: rgb(214, 206, 196);
+    /*background-image:url("./imagenes/tormentacielo.jpg");*/
+    
     
    
   }
@@ -24,7 +26,7 @@ html {
   }
 
   .navlink>i:hover{
-    color:rgb(157, 228, 203);
+    color:white;
   }
   
 .cabecera {
@@ -39,11 +41,19 @@ html {
   font-size:10px;
 }
 .navlink{
-  color:white;
+  color:rgb(13, 66, 136);
 }
 #cierrachat{
-  position: fixed;
+  position: fixed !important;
   bottom: 0;
   right: 0;
+  z-index:1
 
+}
+img {
+  z-index:0
+}
+#carrousel{
+  z-index:0;
+  font-size:2.1rem
 }
