@@ -90,7 +90,7 @@ const enviarMensaje = async (e)=>{
             
             <div className="container-fluid  main-container animated fast fadeIn">
                 <div id="chat-window"className="chat-window ">
-                    <h5 className="text-white m-2">!!! HOLA !!!, en que te puedo ayudar? </h5>
+                    <h5 className="text-white m-2"><span> <img src="/imagenes/wizard.png" alt="" className="" width="60" height="60"/></span> Hola  . . .   en que te puedo ayudar? </h5>
                    
                     
                     <div className="app-mensajes">

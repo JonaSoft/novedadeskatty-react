@@ -14,7 +14,7 @@ const Catalogo = () => {
         {id: 8, nombre: 'mascotas', imagen: '/imagenes/mascotas.jpg', descripcion:'Mascotas con cariño'},
         {id: 9, nombre: 'mujeres', imagen: '/imagenes/mujeres.jpg', descripcion:'Solo para nosotras'},
         {id: 10, nombre: 'niños', imagen: '/imagenes/niños.jpg',descripcion:'Nuestros engreidos'},
-        {id: 11, nombre: 'salud', imagen: '/imagenes/salud.jpg', descripcion:'Salud y belleza'},
+        {id: 11, nombre: 'salud', imagen: '/imagenes/salud.jpg', descripcion:'Salud y bienestar'},
         {id: 12, nombre: 'tecnologia', imagen: '../imagenes/tecnologia.jpg', descripcion:'Para mis Tecnologías'}
 ])
     return (

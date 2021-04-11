@@ -64,7 +64,7 @@ const Carrousel = (props) => {
       >
          <CarouselCaption  className="text-light textocarrousel  font-italic Italica" captionText={item.caption}  />
          
-        <img className="m-2"src={item.src} alt={item.altText} width="100%" height="370px" />
+        <img className="m-2"src={item.src} alt={item.altText} width="100%" height="390px" />
        
 
        
