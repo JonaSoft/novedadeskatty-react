@@ -4,7 +4,7 @@ import Animacion from './Animacion';
 
 const Navbarra = (props) => {
   return (
-    <div className="container-fluid" style={{height:'auto', minHeight:'60px',background:'#1E2B4A '}}>
+    <div className="container-fluid animated fast fadeIn" style={{height:'auto', minHeight:'60px',background:'#1E2B4A '}}>
       <div className="row">
         <div className="col-md-3 col-sm-12 mt-2">
           

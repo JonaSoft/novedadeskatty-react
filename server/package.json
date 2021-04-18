@@ -1,0 +1,20 @@
+{
+  "name": "novedadeskatyserver",
+  "version": "1.0.0",
+  "description": "Servidor de front-end Novedades Katy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "author": "Carlos Ucañán Barrera",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.4"
+  }
+}

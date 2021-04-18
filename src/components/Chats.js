@@ -160,7 +160,7 @@ const enviarMensaje = async (e)=>{
                             <div className="col-md-12 ">
                                 <button 
                                     type="submit"
-                                    className="btn btn-primary btn-block p-0"
+                                    className="btn btn-warning btn-block p-0"
                                         
                                 >
                                     <i class="fas fa-paper-plane text-white"> </i>

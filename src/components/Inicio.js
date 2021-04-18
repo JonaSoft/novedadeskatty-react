@@ -7,6 +7,7 @@ import Animacion from './Animacion';
 import Chats from './Chats';
 
 import Login from './Login';
+import '../App.css'; 
 
 const Inicio = () => {
     return ( 
@@ -15,7 +16,7 @@ const Inicio = () => {
             <Carrousel />
             <br></br>
            
-            <div className="container-fluid" style={{minheight:'1200px', height:'auto'}}>
+            <div className="container-fluid animated fast fadeIn" style={{minHeight:'1200px', height:'1500px'}}>
                 <div className="row">
                     <div className="col-md-12 mt-3">
                         <h2>Nosotros</h2>

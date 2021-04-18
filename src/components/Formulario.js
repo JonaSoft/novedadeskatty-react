@@ -1,5 +1,5 @@
 import React, {Fragment, useState} from 'react';
-
+import '../App.css';
 
 const Formulario = () => {
     return (
@@ -7,7 +7,7 @@ const Formulario = () => {
             <form
             
             >
-                <div className="container-fluid ">
+                <div className="container-fluid animated fast fadeIn">
                     <div className="row justify-content-md-center" >
                     <div className="form-group col-md-7">
                         <input

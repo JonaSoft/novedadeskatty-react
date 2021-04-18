@@ -1,6 +1,7 @@
 import React, { Fragment,useState } from 'react';
 
 
+
 import {
   Carousel,
   CarouselItem,
@@ -74,7 +75,7 @@ const Carrousel = (props) => {
 
   return (
     <Fragment>
-        <div id="carrousel" className="container justify-content-center ">
+        <div id="carrousel" className="container justify-content-center animated fast fadeIn">
 
             <Carousel   
                 activeIndex={activeIndex}

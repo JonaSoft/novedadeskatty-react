@@ -1,5 +1,6 @@
 import React,{Fragment, useState} from 'react';
-import Categoria from './Categoria'
+import Categoria from './Categoria';
+import '../App.css';
 
 const Catalogo = () => {
   const [categorias, guardarCategoria] = useState([
@@ -13,13 +14,13 @@ const Catalogo = () => {
         {id: 7, nombre: 'herramientas', imagen: '/imagenes/herramientas.jpg', descripcion:'Mis herramientas'},
         {id: 8, nombre: 'mascotas', imagen: '/imagenes/mascotas.jpg', descripcion:'Mascotas con cariño'},
         {id: 9, nombre: 'mujeres', imagen: '/imagenes/mujeres.jpg', descripcion:'Solo para nosotras'},
-        {id: 10, nombre: 'niños', imagen: '/imagenes/niños.jpg',descripcion:'Nuestros engreidos'},
+        {id: 10, nombre: 'niños', imagen: '/imagenes/niños.jpg',descripcion:'Los engreidos del hogar'},
         {id: 11, nombre: 'salud', imagen: '/imagenes/salud.jpg', descripcion:'Salud y bienestar'},
         {id: 12, nombre: 'tecnologia', imagen: '../imagenes/tecnologia.jpg', descripcion:'Para mis Tecnologías'}
 ])
     return (
       <Fragment>
-        <div className="container" style={{minheight:'1200px', height:'auto'}}>
+        <div className="container animated fast fadeIn" style={{minheight:'1200px', height:'1500px'}}>
           <div className="row">
             <div className="col-md-12">
                 <h2 className="text-center" style={{ fontFamily:'Carter One',}}>Productos para ti y tu familia</h2>
