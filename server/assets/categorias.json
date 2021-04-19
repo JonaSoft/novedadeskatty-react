@@ -1,0 +1,62 @@
+ [
+	{
+		"nombre": "baño",
+		"imagen": "/imagenes/baño.jpg",
+		"descripcion": "Acondiciona tus servicios"
+	},
+	{
+		"nombre": "cocina",
+		"imagen": "/imagenes/cocina.jpg",
+		"descripcion": "Nuestra moderna cocina"
+	},
+	{
+		"nombre": "colegio",
+		"imagen": "/imagenes/colegio.jpg",
+		"descripcion": "Jovenes y escolares"
+	},
+	{
+		"nombre": "comedor",
+		"imagen": "/imagenes/comedor.jpg",
+		"descripcion": "Reunión y ocasiones"
+	},
+	{
+		"nombre": "dormitorio",
+		"imagen": "/imagenes/dormitorio.jpg",
+		"descripcion": "En nuestro espacio"
+	},
+	{
+		"nombre": "estudio",
+		"imagen": "/imagenes/estudio.jpg",
+		"descripcion": "El rincon del ejecutivo"
+	},
+	{
+		"nombre": "herramientas",
+		"imagen": "/imagenes/herramientas.jpg",
+		"descripcion": "Mis herramientas"
+	},
+	{
+		"nombre": "mascotas",
+		"imagen": "/imagenes/mascotas.jpg",
+		"descripcion": "Mascotas con cariño"
+	},
+	{
+		"nombre": "mujeres",
+		"imagen": "/imagenes/mujeres.jpg",
+		"descripcion": "Solo para nosotras"
+	},
+	{
+		"nombre": "niños",
+		"imagen": "/imagenes/niños.jpg",
+		"descripcion": "Los engreidos del hogar"
+	},
+	{
+		"nombre": "salud",
+		"imagen": "/imagenes/salud.jpg",
+		"descripcion": "Salud y bienestar"
+	},
+	{
+		"nombre": "tecnologia",
+		"imagen": "/imagenes/tecnologia.jpg",
+		"descripcion": "Para mis Tecnologías"
+	}
+]
