@@ -8,7 +8,7 @@ const Productos = () => {
 
     return ( 
     <Fragment>
-        <div className="container-fluid animated fast fadeIn" style={{minheight:'1200px', height:'1500px'}}>
+        <div className="container-fluid animated fast fadeIn" style={{height:'auto', minHeight:'1500px'}}>
             <h2>Desde Productos {categoria}</h2>
         </div>
     </Fragment>

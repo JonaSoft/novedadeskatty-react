@@ -49,6 +49,7 @@ html {
   z-index:1
 
 }
+
 img {
   z-index:0
 }
@@ -109,7 +110,7 @@ img {
 
 
 #delivery {
-  animation : correr 8s infinite
+  animation : correr 5s infinite
 
 }
 @keyframes correr{

@@ -20,7 +20,7 @@ const Catalogo = () => {
     }, [])  
     return (
       <Fragment>
-        <div className="container animated fast fadeIn" style={{minheight:'1200px', height:'1500px'}}>
+        <div className="container animated fast fadeIn" style={{height:'auto', minHeight:'1500px'}}>
           <div className="row">
             <div className="col-md-12">
                 <h2 className="text-center" style={{ fontFamily:'Carter One',}}>Productos para ti y tu familia</h2>

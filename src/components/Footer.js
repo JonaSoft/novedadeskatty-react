@@ -5,7 +5,7 @@ fecha = fecha.getFullYear()
 const Footer = () => {
     return (
       <Fragment>
-           <div className="container-fluid mt-5"  style={{height:'auto', background:'#474743 ', color:'white', float:'bottom'}}>
+           <div id="footer"className="container-fluid mt-5"  style={{height:'auto', background:'#474743 ', color:'white', float:'bottom'}}>
            
             <div className="row">
                  
