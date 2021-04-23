@@ -6,6 +6,8 @@ const Categoria = ({categoria}) => {
     const {nombre,imagen, descripcion} = categoria;
     //console.log({imagen})
     const [productos, setProductos] = useState('');
+
+    //LLamada del Producto
     const verProducto =()=>{
         console.log('ir al Producto',{nombre});
         setProductos({nombre})
@@ -17,7 +19,7 @@ const Categoria = ({categoria}) => {
         <Fragment>
            
                 
-                    <div className="card"
+                    <div className="card categoria"
                         onClick={verProducto}
                     >
                         <img
@@ -28,8 +30,8 @@ const Categoria = ({categoria}) => {
                             title="Ver Productos"
                         />
                         <div className="card-body">
-                            <Link to={linkProducto} className="link">
-                                <h5 className="card-title tarjetas text-secondary">{descripcion}</h5>   
+                            <Link to={linkProducto} className="link" style={{textDecoration:'none'}}>
+                                <h4 className="card-title tarjetas text-secondary">{descripcion}</h4>   
                             </Link>
                         </div>
                     </div>

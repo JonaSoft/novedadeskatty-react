@@ -53,7 +53,7 @@ const Footer = () => {
             <br></br>
             <div className="row">
                 <div className="container-fluid d-flex justify-content-center">
-                    <p className="text-secondary">&copy; Novedades Katty {fecha}</p>
+                    <p className="text-secondary"style={{fontSize:'1.2em'}}>&copy; Novedades Katty {fecha}</p>
                 </div>
             </div>
           </div>

@@ -48,7 +48,7 @@ class Login extends Component {
                             Cerrar Chat
                         </button>
                       </div>
-                    </div>
+                  </div>
                  
                 </Fragment>
 
@@ -58,8 +58,8 @@ class Login extends Component {
                 <div className="row" >
                   
                   <button className=" btn btn-primary mb-2" onClick={signInWithGoogle}>
-                    <i class="far fa-comment-dots "></i>
-                    <span className=""> Necesitas ayuda?</span>
+                    <i class="far fa-comment-dots fa-2x"></i>
+                    <span className="text-white"> Necesitas ayuda?</span>
                 </button>
                 <br></br>
                 </div>

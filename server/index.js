@@ -19,7 +19,8 @@ const PORT = process.env.PORT || 4000;
 
 //importar rutas
 
-app.use('/api/categorias', require('./routes/categorias'))
+app.use('/api/categorias', require('./routes/categorias'));
+app.use('/api/productos', require('./routes/productos'))
 //arrancar la app
 app.listen(PORT, () => {
     console.log('El servidor funcionando en el puerto '+ PORT)

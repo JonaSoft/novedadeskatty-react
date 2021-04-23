@@ -90,7 +90,7 @@ const enviarMensaje = async (e)=>{
             
             <div className="container-fluid  main-container animated fast fadeIn">
                 <div id="chat-window"className="chat-window ">
-                    <h5 className="text-white m-2"><span> <img src="/imagenes/wizard.png" alt="" className="" width="60" height="60"/></span> Hola  . . .   en que te puedo ayudar? </h5>
+                    <h5 className="text-white m-2" style={{fontFamily:'Arbutus',fontSize:'0.85em'}}><span> <img src="/imagenes/wizard.png" alt="" className="" width="60" height="60"/></span> Hola ,   en que te puedo ayudar? </h5>
                    
                     
                     <div className="app-mensajes">
@@ -160,7 +160,7 @@ const enviarMensaje = async (e)=>{
                             <div className="col-md-12 ">
                                 <button 
                                     type="submit"
-                                    className="btn btn-warning btn-block p-0"
+                                    className="btn btn-success btn-block p-0 mt-2"
                                         
                                 >
                                     <i class="fas fa-paper-plane text-white"> </i>

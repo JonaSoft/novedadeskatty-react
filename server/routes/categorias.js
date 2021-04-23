@@ -12,4 +12,5 @@ router.post('/',
  router.get('/',
     controllerCateg.obtenerCategorias
  )
+ 
 module.exports = router;

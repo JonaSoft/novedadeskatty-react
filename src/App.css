@@ -1,17 +1,28 @@
 html {
     box-sizing: border-box;
     height: 100%;
+    color: white
     
   }
   body {
     min-height: 100%;
-    background-color: rgba(233, 238, 240, 0.46);
+    background-color: rgba(121, 132, 136, 0.46);
     /*background-image:url("./imagenes/tormentacielo.jpg");*/
-    
+    background:url("./imagenes/tormentacielo3.jpg")  no-repeat center center fixed;
+    background-size: cover;
+    /*min-height: 900px;*/
+    height: auto;
+    width: 100%;
+    opacity: 0.90;
+  
   }
+  span, h2{
+    color: black;
+  }
+ 
   .navlink >i  {
     
-    color: #fdfcfce8;
+    color:rgb(69, 183, 225);
     
   }
   .nav{
@@ -25,7 +36,8 @@ html {
 
   .navlink >i:hover{
     
-    color: white;
+    color: rgb(255, 255, 255);
+    transition:all .5s ease-in-out;
   }
   
 .cabecera {
@@ -55,7 +67,7 @@ img {
 }
 #carrousel{
   z-index:0;
-  font-size:2.1rem
+  font-size:3.0rem
 }
 
   
@@ -70,6 +82,10 @@ img {
 /*ease inifinite alternate*/
 /*}*/
 /****************************/
+#imagen:hover {
+  filter:grayscale(80%);
+  
+}
 .animated {
   -webkit-animation-duration: 9s;
   animation-duration: 9s;
@@ -114,13 +130,14 @@ img {
 
 }
 @keyframes correr{
-0%{transform: translateX(-120px)}
+0%{transform: translateX(0px)}
 
-100%{transform: translateX(700px)}
+100%{transform: translateX(500px)}
 }
 
 @media screen and (max-width: 1200px) {
   #delivery{
   display:none;
   }
+  
 }

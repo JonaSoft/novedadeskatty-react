@@ -1,13 +1,13 @@
 .tarjetas{
     font-family:'Carter One';
-    font-size:16px
+    font-size:1,5rem
     
 }
-.card:hover{
+.categoria:hover{
 	cursor: pointer;
 	border: 2px solid black;
 	-webkit-box-shadow: 2px 2px 2px #82c3a6;
 	-moz-box-shadow: 2px 2px 2px #82c3a6;
-	 transform: rotate(3deg);
-	transition: 2s;
+	 transform: rotate(2deg);
+	transition: 1s;
 }

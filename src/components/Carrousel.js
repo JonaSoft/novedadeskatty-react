@@ -12,8 +12,8 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import img1 from '../imagenes/img3.jpg' ;
-import img2 from '../imagenes/img2.jpg';
-import img3 from '../imagenes/img1.jpg';
+import img2 from '../imagenes/img1.jpg';
+import img3 from '../imagenes/img2.jpg';
 
 
 
@@ -65,7 +65,7 @@ const Carrousel = (props) => {
       >
          <CarouselCaption  className="text-light textocarrousel  font-italic Italica" captionText={item.caption}  />
          
-        <img className="m-2"src={item.src} alt={item.altText} width="100%" height="390px" />
+        <img className="m-2"src={item.src} alt={item.altText} width="100%" height="520px" />
        
 
        

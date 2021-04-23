@@ -1,7 +1,10 @@
+
 const Categoria = require('../models/Categorias');
+const Productos = require('../models/Productos');
+
 
 exports.crearCategoria = async (req, res) => {
-
+    
     try {
             let categoria
 
@@ -29,8 +32,23 @@ exports.obtenerCategorias = async(req,res) => {
         
     } catch (error) {
         console.log(error);
-        res.status(500).send('Hubo un error');
+        res.status(500).send('Hubo un error al llamar categorias');
         
     }
 
+}
+exports.obtenerProductos = async(req,res) => {
+   
+    try {
+        //import { useParams } from "react-router-dom";
+        const productos = await Productos.find();
+        res.json({productos});
+        console.log(productos)
+        //let {id} = useParams()
+        //console.log(id)
+    } catch (error) {
+        console.log(error);
+        res.status(500).send('Hubo un error al llamar productos');
+        
+    }
 }
