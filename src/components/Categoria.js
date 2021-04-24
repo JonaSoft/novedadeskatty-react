@@ -18,24 +18,24 @@ const Categoria = ({categoria}) => {
     return (
         <Fragment>
            
-                
+           <Link to={linkProducto} className="link" style={{textDecoration:'none'}}>
                     <div className="card categoria"
                         onClick={verProducto}
                     >
-                        <img
+                        <img id="cateproducto"
                             className="card-img-top"
                             src={imagen}
                             height="200"
                             alt={imagen}
-                            title="Ver Productos"
+                            
                         />
                         <div className="card-body">
-                            <Link to={linkProducto} className="link" style={{textDecoration:'none'}}>
+                           
                                 <h4 className="card-title tarjetas text-secondary">{descripcion}</h4>   
-                            </Link>
+                            
                         </div>
                     </div>
-
+            </Link>
               
 
            

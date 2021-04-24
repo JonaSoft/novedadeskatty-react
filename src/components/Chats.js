@@ -96,9 +96,9 @@ const enviarMensaje = async (e)=>{
                     <div className="app-mensajes">
                         
                         
-                        {chat.map((mensuser) => {
+                        {chat.filter(mensajed =>mensajed.usuario ===  valorusuario || mensajed.usuario === "jonasoftservice@gmail.com").map((mensuser) => {
                            return   <div className="container-fluid p-0">
-                                        {mensuser.usuario==="jonasoftservice@gmail.com"
+                                        {mensuser.usuario==="jonasoftservice@gmail.com" 
                                         ?
                                         <div className="text-right">
                                             <span className="badge badge-primary mr-2">Novedades Katty</span>

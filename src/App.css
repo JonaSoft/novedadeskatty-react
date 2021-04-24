@@ -16,8 +16,12 @@ html {
     opacity: 0.90;
   
   }
-  span, h2{
+  span{
     color: black;
+  };
+ 
+  form {
+    opacity:0.9;
   }
  
   .navlink >i  {
@@ -70,22 +74,7 @@ img {
   font-size:3.0rem
 }
 
-  
-  
-/*****Animaciones*****************/
-/*animation-iteration-count: infinite;*/
-
-
-/*#imagen {*/
  
-/*animation : scales 3s infinite*/
-/*ease inifinite alternate*/
-/*}*/
-/****************************/
-#imagen:hover {
-  filter:grayscale(80%);
-  
-}
 .animated {
   -webkit-animation-duration: 9s;
   animation-duration: 9s;

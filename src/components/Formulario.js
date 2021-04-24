@@ -12,7 +12,7 @@ const Formulario = () => {
                     <div className="form-group col-md-7">
                         <input
                             type="text"
-                            className="form-control form-control-md"
+                            className="form-control form-control-lg"
                             placeholder="Busca por producto o categoria, ejemplo: accesorios, cocina,  belleza"
                 
                         />
@@ -20,7 +20,7 @@ const Formulario = () => {
                     <div className="form-group col-md-2">
                         <button
                             type="submit"
-                            className="btn btn-md btn-success btn-block"
+                            className="btn btn-lg btn-success btn-block"
                 
                         >
                             <i class="fa fa-search" aria-hidden="true"></i>

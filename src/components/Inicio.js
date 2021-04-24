@@ -12,9 +12,9 @@ import '../App.css';
 const Inicio = () => {
     return ( 
         <Fragment>
+             <Formulario />
             <Carrousel />
             <br></br>
-           
             <div className="container-fluid animated fast fadeIn" style={{height:'auto', minHeight:'1500px'}}>
                 <div className="row">
                     <div className="col-md-12 mt-3">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route,Redirect } from 'react-router-dom';
 import Inicio from './components/Inicio';
 import Catalogo from './components/Catalogo';
 import Productos from './components/Productos';
@@ -13,8 +13,7 @@ import Footer from './components/Footer'
 
 function App() {
   console.log(process.env.REACT_APP_BACKEND_URL);
-  //console.log('backend')
-  return (
+   return (
     <Router>
       <Navbarra />
         <br></br>
@@ -23,6 +22,7 @@ function App() {
         <Route exact path="/catalogo" component = {Catalogo} />
         <Route exact path="/catalogo/productos/:categoria" component = {Productos} />
         <Route exact path="/carrito" component = {Carrito} />
+        <Redirect to="/" component ={Inicio}></Redirect>
       </Switch>
       <Login  />
       <br></br>
