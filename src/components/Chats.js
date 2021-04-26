@@ -50,12 +50,20 @@ const actualizarState = (e) =>{
         querySnapshot.forEach((doc) => {
             docs.push({...doc.data(), id:doc.id})
         });
-        setChat(docs)
+        if(valorusuario === "jonasoftservice@gmail.com"){
+            setChat(docs)
+        }else{
+            const nuevofiltro = docs.filter(mensajed =>mensajed.usuario ===  valorusuario || mensajed.usuario === "jonasoftservice@gmail.com")
+            console.log('Filtro previo',nuevofiltro);
+            setChat(nuevofiltro);
+            return
+        }
+        
         console.log(docs)
        
-        console.log(chat)
+        
     });
-    console.log(chat)
+    
  }
 
 
@@ -72,15 +80,9 @@ const enviarMensaje = async (e)=>{
             mensaje:''
         })
     })
-    //console.log('nueva tarea')
-    
-    
-    //    const padre= imagen.parentNode;
-    //padre.removeChild(imagen);
-    
+  
     llamarColeccion();
-    //console.log({chat})
-    //setChat([])
+  
 };
 
 
@@ -94,41 +96,43 @@ const enviarMensaje = async (e)=>{
                    
                     
                     <div className="app-mensajes">
+                       
                         
-                        
-                        {chat.filter(mensajed =>mensajed.usuario ===  valorusuario || mensajed.usuario === "jonasoftservice@gmail.com").map((mensuser) => {
+                        {chat.map((mensuser) => {
                            return   <div className="container-fluid p-0">
                                         {mensuser.usuario==="jonasoftservice@gmail.com" 
                                         ?
                                         <div className="text-right">
-                                            <span className="badge badge-primary mr-2">Novedades Katty</span>
-                                                <p  className="mr-2">
-                                                <span > 
+                                            <span > 
                                                     <img 
                                                         src={mensuser.avatar}
-                                                        className="rounded-circle" 
-                                                        width="35" 
-                                                        height="35"
+                                                        className="rounded-circle mr-2" 
+                                                        width="25" 
+                                                        height="25"
                                                     /> 
-                                                </span> 
+                                            </span> 
+                                            <span className="badge badge-primary mr-2" style={{fontSize:'12px'}}>Novedades Katty</span>
+                                                <p  className="mr-2">
+                                               
                                                     {mensuser.mensaje}
                                                 </p>
                                         </div>       
                                         : 
-                                            <div className="text-left mt-2">
-                                                <span className="badge badge-success fecha">
-                                                {mensuser.usuario}
-                                                </span>    
-                                                <div>
-                                                <span > 
+                                            <div className="text-left">
+                                                 <span > 
                                                     <img 
                                                         src={mensuser.avatar}
-                                                        className="rounded-circle" 
-                                                        width="35" 
-                                                        height="35"
+                                                        className="rounded-circle m-2" 
+                                                        width="25" 
+                                                        height="25"
                                                     /> 
                                                 </span> 
-                                                <span  className="ml-2">{mensuser.mensaje} </span>  
+                                                <span className="badge badge-success mr-2"  style={{fontSize:'12px'}}>
+                                                    {mensuser.usuario}
+                                                </span>    
+                                                <div>
+                                               
+                                                <p  className="ml-2">{mensuser.mensaje} </p>  
                                                 </div>
                                             </div>
                                         }
@@ -137,7 +141,7 @@ const enviarMensaje = async (e)=>{
                         }
                             
                         )}
-                       
+                        
                     </div>
                     
                     <form

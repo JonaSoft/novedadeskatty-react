@@ -1,15 +1,22 @@
 import React from 'react';
 import { Nav, NavLink } from 'reactstrap';
 import Animacion from './Animacion';
+import Formulario from './Formulario';
 
 const Navbarra = (props) => {
   return (
-    <div className="container-fluid animated fast fadeIn" style={{minHeight:'75px', maxHeight:'auto', width:'100%'}}>
+    <div className="container-fluid animated fast fadeIn" style={{minHeight:'70px', maxHeight:'auto', width:'100%', background:'black'}}>
       <div className="row">
-        <div className="col-md-4 col-sm-12 mt-2">
+        <div className="col-md-4 col-sm-12 p-2">
           
-          <img id="imagen"src="/imagenes/common.png" alt="" className="rounded-circle " width="50" height="50" />
-          <span className="mt-2" style={{fontFamily:'Pacifico,cursive',  color:'white', fontSize:'1.6em',fontWeight:'550',textShadow: '0.1em 0.12em gray'}}> NOVEDADES KATTY </span>
+        <img id="imagen"src="/imagenes/common.png" alt="" className="rounded-circle m-2" width="60" height="60" />
+          <span 
+            className=""
+            style={{fontFamily:'Pacifico,cursive',  color:'white', fontSize:'1.5em',fontWeight:'550',textShadow: '0.1em 0.12em gray'}}>
+                NOVEDADES KATTY
+               
+          </span>
+
         </div> 
         <div className="col-md-6 col-sm-12">
          < Animacion />
@@ -31,7 +38,7 @@ const Navbarra = (props) => {
           </div>  
         </div>  
         
-     
+       
     </div>
     
     

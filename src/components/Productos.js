@@ -2,7 +2,7 @@ import React,{Fragment, useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import Producto from './Producto';
 import clienteAxios from '../config/axios';
-import {RViewerTrigger, RViewer} from 'react-viewerjs'
+
 
 
 const Productos = () => {
@@ -12,7 +12,7 @@ const Productos = () => {
     //state para los productos
     const [productos, guardarProductos] = useState([
         
-	{
+	/*{
 		"nombre": "baño",
 		"imagen": "/imagenes/baño/1.jpg",
 		"precio": "9.99",
@@ -539,17 +539,17 @@ const Productos = () => {
 		"imagen": "/imagenes/cocina/6.jpg",
 		"precio": "25.50",
 		"stock": "100"
-	}
-    ]); 
+	}*/
+    ]);
 
     //obtener productos
     const obtenerProductos = async() => {
         
 
         try {
-            //const resultado = await clienteAxios.get('/api/productos');
-            //console.log('productos', resultado.data.productos);
-            //await guardarProductos(resultado.data.productos);
+            const resultado = await clienteAxios.get('/api/productos');
+            console.log('productos', resultado.data.productos);
+            await guardarProductos(resultado.data.productos);
            
         } catch (error) {
             console.log(error)
@@ -569,7 +569,7 @@ const Productos = () => {
                 <h2 className="text-center mt-4" style={{ fontFamily:'Carter One',fontSize:'2.5em'}}>
 					Resultados por Categoria 
 					</h2>
-					<hr></hr>
+					
             </div>
           </div>
             

@@ -26,7 +26,8 @@ html {
  
   .navlink >i  {
     
-    color:rgb(69, 183, 225);
+    
+    color: rgb(255, 255, 255);
     
   }
   .nav{
@@ -36,11 +37,12 @@ html {
   .nav >i{
     
     font-family:'Bungee', cursive;
+    
   }
 
   .navlink >i:hover{
     
-    color: rgb(255, 255, 255);
+    color: rgb(23, 172, 90);
     transition:all .5s ease-in-out;
   }
   

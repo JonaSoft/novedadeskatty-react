@@ -338,161 +338,193 @@
 	{
 		"nombre": "mujeres",
 		"imagen": "/imagenes/mujeres/3.jpg",
-		"precio": "32.00"
+		"precio": "32.00",
+		"stock": "56"
 	},
 	{
 		"nombre": "mujeres",
 		"imagen": "/imagenes/mujeres/4.jpg",
-		"precio": "19.99"
+		"precio": "19.99",
+		"stock": "125"
 	},
 	{
 		"nombre": "mujeres",
 		"imagen": "/imagenes/mujeres/5.jpg",
-		"precio": "16.99"
+		"precio": "16.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "mujeres",
 		"imagen": "/imagenes/mujeres/6.jpg",
-		"precio": "29.99"
+		"precio": "29.99",
+		"stock": "88"
 	},
 	{
 		"nombre": "niños",
 		"imagen": "/imagenes/niños/1.jpg",
-		"precio": "19.99"
+		"precio": "19.99",
+		"stock": "125"
 	},
 	{
 		"nombre": "niños",
 		"imagen": "/imagenes/niños/2.jpg",
-		"precio": "18.99"
+		"precio": "18.99",
+		"stock": "156"
 	},
 	{
 		"nombre": "niños",
 		"imagen": "/imagenes/niños/3.jpg",
-		"precio": "25.99"
+		"precio": "25.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "niños",
 		"imagen": "/imagenes/niños/4.jpg",
-		"precio": "26.99"
+		"precio": "26.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "niños",
 		"imagen": "/imagenes/niños/5.jpg",
-		"precio": "24.99"
+		"precio": "24.99",
+		"stock": "125"
 	},
 	{
 		"nombre": "niños",
 		"imagen": "/imagenes/niños/6.jpg",
-		"precio": "19.99"
+		"precio": "19.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "niños",
 		"imagen": "/imagenes/niños/7.jpg",
-		"precio": "32.99"
+		"precio": "32.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "niños",
 		"imagen": "/imagenes/niños/8.jpg",
-		"precio": "23.99"
+		"precio": "23.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "salud",
 		"imagen": "/imagenes/salud/1.jpg",
-		"precio": "17.99"
+		"precio": "17.99",
+		"stock": "125"
 	},
 	{
 		"nombre": "salud",
 		"imagen": "/imagenes/salud/2.jpg",
-		"precio": "16.99"
+		"precio": "16.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "salud",
 		"imagen": "/imagenes/salud/3.jpg",
-		"precio": "14.20"
+		"precio": "14.20",
+		"stock": "100"
 	},
 	{
 		"nombre": "salud",
 		"imagen": "/imagenes/salud/4.jpg",
-		"precio": "32.99"
+		"precio": "32.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "salud",
 		"imagen": "/imagenes/salud/5.jpg",
-		"precio": "17.99"
+		"precio": "17.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "salud",
 		"imagen": "/imagenes/salud/6.jpg",
-		"precio": "26.50"
+		"precio": "26.50",
+		"stock": "100"
 	},
 	{
 		"nombre": "salud",
 		"imagen": "/imagenes/salud/7.jpg",
-		"precio": "17.99"
+		"precio": "17.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "salud",
 		"imagen": "/imagenes/salud/8.jpg",
-		"precio": "17.99"
+		"precio": "17.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "tecnologia",
 		"imagen": "/imagenes/tecnologia/1.jpg",
-		"precio": "17.99"
+		"precio": "17.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "tecnologia",
 		"imagen": "/imagenes/tecnologia/2.jpg",
-		"precio": "23.50"
+		"precio": "23.50",
+		"stock": "92"
 	},
 	{
 		"nombre": "tecnologia",
 		"imagen": "/imagenes/tecnologia/3.jpg",
-		"precio": "17.99"
+		"precio": "17.99",
+		"stock": "110"
 	},
 	{
 		"nombre": "tecnologia",
 		"imagen": "/imagenes/tecnologia/4.jpg",
-		"precio": "42.99"
+		"precio": "42.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "tecnologia",
 		"imagen": "/imagenes/tecnologia/5.jpg",
-		"precio": "17.99"
+		"precio": "17.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "tecnologia",
 		"imagen": "/imagenes/tecnologia/6.jpg",
-		"precio": "31.50"
+		"precio": "31.50",
+		"stock": "100"
 	},
 	{
 		"nombre": "cocina",
 		"imagen": "/imagenes/cocina/1.jpg",
-		"precio": "56.00"
+		"precio": "56.00",
+		"stock": "100"
 	},
 	{
 		"nombre": "cocina",
 		"imagen": "/imagenes/cocina/2.jpg",
-		"precio": "26.50"
+		"precio": "26.50",
+		"stock": "200"
 	},
 	{
 		"nombre": "cocina",
 		"imagen": "/imagenes/cocina/3.jpg",
-		"precio": "23.99"
+		"precio": "23.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "cocina",
 		"imagen": "/imagenes/cocina/4.jpg",
-		"precio": "29.99"
+		"precio": "29.99",
+		"stock": "100"
 	},
 	{
 		"nombre": "cocina",
 		"imagen": "/imagenes/cocina/5.jpg",
-		"precio": "32.50"
+		"precio": "32.50",
+		"stock": "100"
 	},
 	{
 		"nombre": "cocina",
 		"imagen": "/imagenes/cocina/6.jpg",
-		"precio": "25.50"
+		"precio": "25.50",
+		"stock": "100"
 	}
 ]

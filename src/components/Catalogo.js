@@ -8,7 +8,7 @@ import clienteAxios from '../config/axios';
 const Catalogo = () => {
   const [categorias, guardarCategoria] = useState(
     [
-      {
+     /* {
         "nombre": "baño",
         "imagen": "/imagenes/baño.jpg",
         "descripcion": "Acondiciona tus servicios"
@@ -67,14 +67,14 @@ const Catalogo = () => {
         "nombre": "tecnologia",
         "imagen": "/imagenes/tecnologia.jpg",
         "descripcion": "Para mis Tecnologías"
-      }
+      }*/
     ]
   )
   const obtenerCategorias = async () =>{
     try {
-      //const resultado = await  clienteAxios.get('/api/categorias') ;
-      //console.log(resultado.data.categorias)
-      //await guardarCategoria(resultado.data.categorias)
+      const resultado = await  clienteAxios.get('/api/categorias') ;
+      console.log(resultado.data.categorias)
+      await guardarCategoria(resultado.data.categorias)
     } catch (error) {
       console.log(error)
     }
@@ -92,19 +92,21 @@ const Catalogo = () => {
             </div>
           </div>
            
-         <div className="row mt-2">
+         <div className="row">
           <hr></hr>
-            <div className="card-columns">
+          <div className="container-fluid col-sm-12">
+          <div className="card-columns">
               {categorias.map(categoria =>(
                   <Categoria 
                   key= {categoria._id}
                   categoria = {categoria}
-                
-                />
+                  />
                       
             ))
             } 
               </div>
+          </div>
+            
 
           </div>
         

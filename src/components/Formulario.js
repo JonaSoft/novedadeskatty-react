@@ -1,40 +1,38 @@
 import React, {Fragment, useState} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import{ Button, Container, Row, Form,Label, InputGroup,  FormControl,Col} from'react-bootstrap';
+
 import '../App.css';
 
-const Formulario = () => {
-    return (
-        <Fragment>
-            <form
-            
-            >
-                <div className="container-fluid animated fast fadeIn">
-                    <div className="row justify-content-md-center" >
-                    <div className="form-group col-md-7">
-                        <input
-                            type="text"
-                            className="form-control form-control-lg"
-                            placeholder="Busca por producto o categoria, ejemplo: accesorios, cocina,  belleza"
-                
-                        />
-                    </div>
-                    <div className="form-group col-md-2">
-                        <button
-                            type="submit"
-                            className="btn btn-lg btn-success btn-block"
-                
-                        >
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                
-            </form>
-    
+export default function Formulario(){
+    return(
+        <>
+        <div>
+            <Container>
+                <Row>
 
-        </Fragment>
-        
-      );
-}
- 
-export default Formulario;
+                    <Col sm={2}></Col>
+                    <Col sm={8}>
+                
+                        <InputGroup className="mb-3">
+                    
+                    
+                            <FormControl
+                                size="md"
+                                type= "text"
+                                placeholder="Busca por producto o categoria, ejemplo: accesorios, cocina,  belleza, etc"
+                                aria-label="Recipient's username"
+                                aria-describedby="basic-addon2"
+                            />
+                            
+                            <Button  size="md" className="btn btn-primary"><i class="fas fa-search"></i></Button>
+                                
+                        </InputGroup>
+                    </Col >
+                    <Col  sm={2}></Col>
+                </Row>
+            </Container>
+        </div>
+        </>
+    )
+};

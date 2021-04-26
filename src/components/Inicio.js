@@ -12,13 +12,14 @@ import '../App.css';
 const Inicio = () => {
     return ( 
         <Fragment>
-             <Formulario />
+            <Formulario />
+            <br></br>
             <Carrousel />
             <br></br>
             <div className="container-fluid animated fast fadeIn" style={{height:'auto', minHeight:'1500px'}}>
                 <div className="row">
                     <div className="col-md-12 mt-3">
-                        <h2 style={{fontSize:'2.5em'}}>Nosotros</h2>
+                        <h2 style={{fontSize:'2.5em', color:'black'}}>Nosotros</h2>
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis impedit vel asperiores assumenda. Facere, placeat dignissimos quaerat nesciunt, ut maxime corporis odit quae dicta blanditiis explicabo odio sit. Nostrum.</span>
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis impedit vel asperiores assumenda. Facere, placeat dignissimos quaerat nesciunt, ut maxime corporis odit quae dicta blanditiis explicabo odio sit. Nostrum.</span>
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis impedit vel asperiores assumenda. Facere, placeat dignissimos quaerat nesciunt, ut maxime corporis odit quae dicta blanditiis explicabo odio sit. Nostrum.</span>
@@ -36,7 +37,7 @@ const Inicio = () => {
                 <div className="row">
                     
                     <div className="col-md-12 mt-5">
-                        <h2 style={{fontSize:'2.5em'}}>Concursos y premios</h2>
+                        <h2 style={{fontSize:'2.5em',color:'black'}}>Concursos y premios</h2>
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis impedit vel asperiores assumenda. Facere, placeat dignissimos quaerat nesciunt, ut maxime corporis odit quae dicta blanditiis explicabo odio sit. Nostrum.</span>
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis impedit vel asperiores assumenda. Facere, placeat dignissimos quaerat nesciunt, ut maxime corporis odit quae dicta blanditiis explicabo odio sit. Nostrum.</span>
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis impedit vel asperiores assumenda. Facere, placeat dignissimos quaerat nesciunt, ut maxime corporis odit quae dicta blanditiis explicabo odio sit. Nostrum.</span>
@@ -54,7 +55,7 @@ const Inicio = () => {
                 <div className="row">
 
                     <div className="col-md-12 mt-5">
-                        <h2 style={{fontSize:'2.5em'}}>Nuestra Meta</h2>
+                        <h2 style={{fontSize:'2.5em', color:'black'}}>Nuestra Meta</h2>
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis impedit vel asperiores assumenda. Facere, placeat dignissimos quaerat nesciunt, ut maxime corporis odit quae dicta blanditiis explicabo odio sit. Nostrum.</span>
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis impedit vel asperiores assumenda. Facere, placeat dignissimos quaerat nesciunt, ut maxime corporis odit quae dicta blanditiis explicabo odio sit. Nostrum.</span>
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis impedit vel asperiores assumenda. Facere, placeat dignissimos quaerat nesciunt, ut maxime corporis odit quae dicta blanditiis explicabo odio sit. Nostrum.</span>

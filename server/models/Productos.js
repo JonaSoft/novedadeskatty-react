@@ -9,6 +9,9 @@ const ProductosSchema = mongoose.Schema({
     },
     precio: {
         type:String
+    },
+    stock: {
+        type: String
     }
 });
 module.exports = mongoose.model('Productos', ProductosSchema)

@@ -11,8 +11,12 @@
     overflow:hidden;
   }
   
+  .itemid{
+    font-size: 0.7em;
+    font-weight:bold
+  }
   .display-precio{
-    font-size:2em
+    font-size:2em;
   }
   
 
