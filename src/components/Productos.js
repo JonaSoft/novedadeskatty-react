@@ -1,6 +1,7 @@
 import React,{Fragment, useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import Producto from './Producto';
+import Carrito from './Carrito';
 import clienteAxios from '../config/axios';
 
 
@@ -555,6 +556,10 @@ const Productos = () => {
             console.log(error)
         }
     }
+	
+     //State Carrito de compras 
+	 const [carrito, agregarProducto] = useState([]);
+
     useEffect(() => {
         obtenerProductos()
         
@@ -573,7 +578,7 @@ const Productos = () => {
             </div>
           </div>
             
-            <div className="row mt-2">
+          <div className="row mt-2">
             <hr></hr>
             <div className="col-md-12">
                 <div className="card-columns">
@@ -581,14 +586,19 @@ const Productos = () => {
                             <Producto 
                             key = {producto._id}
                             producto = {producto}
+							carrito = {carrito}
+							productos = {productos}
+							agregarProducto = {agregarProducto}
                             
                             />
                             
                     ))} 
+					
                 </div>
             </div>
+			<Carrito />
           </div>
-
+						
         </div>
     </Fragment>
     

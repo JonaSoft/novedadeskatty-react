@@ -27,7 +27,7 @@ html {
   .navlink >i  {
     
     
-    color: rgb(255, 255, 255);
+    color: rgb(17, 52, 97);
     
   }
   .nav{
@@ -42,7 +42,7 @@ html {
 
   .navlink >i:hover{
     
-    color: rgb(23, 172, 90);
+    color: rgb(255, 255, 255);
     transition:all .5s ease-in-out;
   }
   

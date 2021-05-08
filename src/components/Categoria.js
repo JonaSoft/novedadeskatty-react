@@ -5,14 +5,19 @@ import  '../Categoria.css'
 const Categoria = ({categoria}) => {
     const {nombre,imagen, descripcion} = categoria;
     //console.log({imagen})
+    //state pra guardar productos por categoria 
     const [productos, setProductos] = useState('');
+    
+    
 
     //LLamada del Producto
-    const verProducto =()=>{
-        console.log('ir al Producto',{nombre});
+    const verProductos =()=>{
+        
         setProductos({nombre})
+        console.log('ir al Producto',{nombre});
     }
     const linkProducto = `/catalogo/productos/${nombre}`
+    console.log(linkProducto)
     
 
     return (
@@ -20,7 +25,7 @@ const Categoria = ({categoria}) => {
            
            <Link to={linkProducto} className="link" style={{textDecoration:'none'}}>
                     <div className="card categoria"
-                        onClick={verProducto}
+                        onClick={verProductos}
                     >
                         <img id="cateproducto"
                             className="card-img-top"

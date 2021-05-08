@@ -5,7 +5,7 @@ import Formulario from './Formulario';
 
 const Navbarra = (props) => {
   return (
-    <div className="container-fluid animated fast fadeIn" style={{minHeight:'70px', maxHeight:'auto', width:'100%', background:'black'}}>
+    <div className="container-fluid animated fast fadeIn" style={{minHeight:'70px', maxHeight:'auto', width:'100%', background:''}}>
       <div className="row">
         <div className="col-md-4 col-sm-12 p-2">
           

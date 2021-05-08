@@ -1,19 +1,44 @@
-import React,{Fragment} from 'react';
+import React,{Fragment, useContext} from 'react';
 import { useParams } from 'react-router-dom';
-import './css/Producto.css'
+import './css/Producto.css';
 
-const Producto = ({producto}) => {
+import {ComprasContext} from '../context/ComprasContext';
+
+
+const Producto = ({producto, carrito, productos, agregarProducto}) => {
+
+   
+    //carrito de compras del context 
+    
+    const {guardarCarroCompras} = useContext(ComprasContext)
+
+    ////fin carritocompras 
+
     const {categoria} = useParams();
     
     const {_id, nombre, imagen, precio, stock} = producto;
     //Inicio funcion zoom
 
     //Fin funcion zoom
-
+ 
+    const comprarItem =  _id => {
+     
+        const productosele = productos.filter( item => item._id === _id)[0];
+            console.log(productosele)
+            agregarProducto([
+                ...carrito,
+                productosele
+            ]);
+            guardarCarroCompras([
+                ...carrito,
+                productosele
+            ])
+    }
+        console.log(carrito)
     return (
         <Fragment>
             <div className="col-md-12">
-
+          
             
             <div className="card animated fast fadeIn contenedor ">
                 <img
@@ -33,8 +58,9 @@ const Producto = ({producto}) => {
                     </h5>
                     <div className="form-group col-md">
                     <button   style={{fontSize:'1.5em'}}
-                        type="submit"
+                        type="button"
                         className="btn btn-large btn-success btn-block"
+                        onClick={()=>comprarItem(_id)}
                        
                     >Comprar</button>
                 </div>
