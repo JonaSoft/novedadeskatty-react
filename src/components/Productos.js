@@ -596,7 +596,7 @@ const Productos = () => {
 					
                 </div>
             </div>
-			<Carrito />
+			
           </div>
 						
         </div>

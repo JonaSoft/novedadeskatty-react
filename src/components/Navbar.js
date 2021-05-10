@@ -31,7 +31,7 @@ const Navbarra = (props) => {
                   <NavLink className="navlink" href="/catalogo"alt="Catálogo"><i className="fas fa-clipboard-list fa-2x" title="Ir al Catálogo"> </i></NavLink>
                   
                   
-                  <NavLink className="navlink" href="/carrito" alt="Carrito de compras"> <i className="fas fa-cart-arrow-down fa-2x" title="Mi carrito de compras"></i></NavLink>
+                  <NavLink className="navlink" href="/catalogo/carrito" alt="Carrito de compras"> <i className="fas fa-cart-arrow-down fa-2x" title="Mi carrito de compras"></i></NavLink>
                   
               </div>
             </Nav>

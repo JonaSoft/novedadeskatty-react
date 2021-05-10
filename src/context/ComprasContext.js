@@ -4,12 +4,14 @@ export const ComprasContext = createContext();
 
 const ComprasProvider = (props) => {
 
-    const [carrocompras, guardarCarroCompras] = useState([])
+    const [carrocompras, guardarCarroCompras] = useState([]);
+    
     return (
         <ComprasContext.Provider
             value ={{
                 carrocompras,
                 guardarCarroCompras
+                
             }}
         >
             {props.children}

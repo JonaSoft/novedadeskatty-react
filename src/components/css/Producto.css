@@ -18,7 +18,16 @@
   .display-precio{
     font-size:2em;
   }
-  
+  .redondeado {
+    border-radius: 25px;
+    border-style: none;
+    text-align: end;
+    
+  }
+  .confondo {
+    background-color: #def;
+    padding:0px;
+  }
 
   .animated {
     -webkit-animation-duration: 9s;
