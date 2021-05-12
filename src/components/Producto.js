@@ -8,6 +8,8 @@ import {ComprasContext} from '../context/ComprasContext';
 
 const Producto = ({producto, carrito, productos, agregarProducto}) => {
 
+    const [error, guardarError] = useState(false);
+
     const [cantidad, guardarCantidad] = useState({
         itemcantidad:''
     })
@@ -15,9 +17,7 @@ const Producto = ({producto, carrito, productos, agregarProducto}) => {
     
     const {guardarCarroCompras} = useContext(ComprasContext);
     
-
-    ////fin carritocompras 
-
+  
     const {categoria} = useParams();
     
     const {_id, nombre, imagen, precio, stock} = producto;
@@ -26,27 +26,35 @@ const Producto = ({producto, carrito, productos, agregarProducto}) => {
     //Fin funcion zoom
  
     const comprarItem =  _id => {
-     
+        if( cantidad.itemcantidad==='0' || cantidad.itemcantidad===''){
+            guardarError(true)
+           
+            return
+        }
+        guardarError(false);
+        setTimeout(function(){ 
+            alert("Agregado al carrito ");
+            
+         }, 500);
         const productosele = productos.filter( item => item._id === _id)[0];
-        //productosele.push({cantidad:'3'})
         const productoselefinal = {...productosele, ...cantidad}
             console.log(productosele)
 
-            console.log(cantidad)
+            console.log(cantidad.itemcantidad)
             console.log(productoselefinal)
             agregarProducto([
                 ...carrito,
-                
                 productoselefinal
             ])
             
             guardarCarroCompras([
                 ...carrito,
-                
                 productoselefinal
             ])
     }
-        console.log(carrito)
+    console.log('desde producto ', localStorage.getItem('carrito'));
+    let comprastotal= localStorage.getItem('carrito')
+    console.log('carrito storage',comprastotal)
     useEffect(() => {
         localStorage.setItem ('carrito', JSON.stringify(carrito))
         
@@ -56,6 +64,7 @@ const Producto = ({producto, carrito, productos, agregarProducto}) => {
         guardarCantidad({
             [e.target.name] : e.target.value
         })
+        guardarError(false)
     }
     return (
         <Fragment>
@@ -89,14 +98,29 @@ const Producto = ({producto, carrito, productos, agregarProducto}) => {
                             onChange={ obtenerCantidadProducto}
                         />
                     </div>
+                    <div className="container">
+                        { error
+                                ? 
+                                    <p className="alert text-danger display-5" style={{ fontFamily:'Carter One',fontSize:'1em'}}>
+                                        Ingrese cantidad.....!!!!!!!!
+                                    </p>
+                                                            
+                                : null
+
+                        }
+                    </div>
                     <div className="form-group container mt-2 col-md">
                         
+                    
                         <button   style={{fontSize:'1.5em'}}
                             type="button"
                             className="btn btn-large btn-success btn-block"
                             onClick={()=>comprarItem(_id)}
                         
                         >Agregar al Carro </button>
+                       
+                        
+                        
                     </div>
                 </div>
             </div>

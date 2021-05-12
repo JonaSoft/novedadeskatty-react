@@ -10,7 +10,7 @@ const Catalogo = () => {
   
   const { categorias } = useContext( CategoriasContext);
   
-  
+  console.log('desde catalogo',categorias);
 
   
     return (

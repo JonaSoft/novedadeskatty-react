@@ -13,11 +13,7 @@ const Carrito = () => {
     let arraycompra = localStorage.getItem('carrito');
     let arraycompras = JSON.parse(arraycompra);
     console.log(arraycompras);
-    /*arraycompras.forEach(subtotal =>{
-        subtotal.itemcantidad*subtotal.precio
-    })*/
-
-    //let subtotal = (arraycompras[0].itemcantidad*arraycompras[0].precio)
+  
     if (arraycompras.length===0){
         console.log('carrito vacio')
     }
@@ -42,7 +38,7 @@ const Carrito = () => {
     return ( 
         <Fragment>
             <div className="container animated fast fadeIn" style={{height:'auto'}}>
-                <h2 className="text-center m-2">Cotización de Productos</h2>
+                <h2 className="text-center m-2">Cotización de mis Productos</h2>
                 
             
                 {arraycompras.length === 0

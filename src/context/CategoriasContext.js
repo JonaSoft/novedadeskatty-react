@@ -9,12 +9,13 @@ export const CategoriasContext = createContext();
 const CategoriasProvider = (props)=>{
     // crear el state del Context
     const [categorias, guardarCategorias] = useState([]);
+    console.log(categorias)
 
     useEffect(() => {
         //llamando a la bdMongo
         const obtenerCategorias = async () =>{
             try {
-            const resultado = await  clienteAxios.get('/api/categorias') ;
+            const resultado = await  clienteAxios.get('/api/categorias');
             console.log(resultado.data.categorias)
             await guardarCategorias(resultado.data.categorias)
             } catch (error) {

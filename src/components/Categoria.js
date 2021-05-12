@@ -13,8 +13,10 @@ const Categoria = ({categoria}) => {
     //LLamada del Producto
     const verProductos =()=>{
         
-        setProductos({nombre})
+        //setProductos({nombre})
         console.log('ir al Producto',{nombre});
+        let contenedorcat = localStorage.getItem('carrito');
+        console.log(contenedorcat)
     }
     const linkProducto = `/catalogo/productos/${nombre}`
     console.log(linkProducto)
